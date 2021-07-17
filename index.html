@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>Project-004-Checkout-Form</title>
 </head>
 <body>
     <h1>Checkout</h1>
     <main>
         <form action="result.html" method="get">
-            <div id="pruducts">
+            <div id="products">
                 <div class="product">
                     <img src="./IMG/photo1.png" alt="Vintage Backbag" class="product__img">
                     <div class="pruduct__info">
@@ -37,55 +39,82 @@
                 </div>
                 <div class="costs">
                     <hr>
-                    <p>Shipping</p>
+                    <p class="label-cost">Shipping</p>
                     <p>$19</p>
                     <hr>
-                    <p>Total</p>
+                    <p class="label-cost">Total</p>
                     <p>$148.98</p>
                 </div>
             </div>
 
-            <div id="main-fom">
+            <div id="main-form">
                 <div class="contact-info">
                     <h2>Contact information</h2>
-                    <div class="c-email">
+                    <div class="main-form_i c-email">
                         <label for="email">Email</label><br>
-                        <input type="email" name="mail" id="email" placeholder="Enter your email...">
+                        <div class="input-field">
+                             <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <input type="email" name="mail" id="email" placeholder="Enter your email...">                           
+                       </div>
+
                     </div>
-                    <div class="c-tel">
+                    <div class="main-form_i c-tel">
                         <label for="telno">Phone</label><br>
-                        <input type="tel" name="telefon" id="telno" pattern="[+]{1}[0-9]{1-2}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="Enter your phone...">
+                        <div class="input-field">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <input type="tel" name="telefon" id="telno" pattern="[+]{1}[0-9]{1-2}[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="Enter your phone...">                            
+                        </div>
+
                     </div>  
                 </div>
     
                 <div class="address">
                     <h2>Shipping address</h2>
-                    <div class="c-name">
+                    <div class="main-form_i c-name">
                         <label for="name">Name</label><br>
-                        <input type="text" name="name" id="name" placeholder="Enter your full name...">
+                        <div class="input-field">
+                             <i class="fas fa-user" aria-hidden="true"></i>
+                            <input type="text" name="name" id="name" placeholder="Enter your full name...">
+                        </div>
                     </div>
-                    <div class="c-address">
+                    <div class="main-form_i c-address">
                         <label for="address">Address</label><br>
-                        <input type="text" name="address" id="address" placeholder="Enter your address...">
+                        <div class="input-field">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                            <input type="text" name="address" id="address" placeholder="Enter your address...">
+                        </div>
+
                     </div> 
-                    <div class="c-city">
+                    <div class="main-form_i c-city">
                         <label for="city">City</label><br>
-                        <input type="text" name="city" id="city" placeholder="Enter your city...">
+                        <div class="input-field">
+                            <i class="fas fa-city" aria-hidden="true"></i>
+                            <input type="text" name="city" id="city" placeholder="Enter your city...">
+                        </div>
+
                     </div>
-                    <div class="c-combine">
+                    <div class="main-form_i c-combine">
                         <div class="c-country">
                             <label for="country">Country</label><br>
-                            <select name="country" id="country"  required>
-                                <option value="Turkey" selected>Turkey</option>
-                                <option value="Germany">Germany</option>
-                                <option value="USA">USA</option>
-                                <option value="Canada">Canada</option>
-                                <option value="UK">UK</option>
-                            </select>
+                            <div class="input-field">
+                                <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                                <select name="country" id="country"  required>
+                                    <option value="Turkey" selected>Turkey</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">UK</option>
+                                </select>
+                            </div>
+                            
                         </div>
                         <div class="c-postal-code">
                             <label for="postal-code">Post code</label><br>
-                        <input type="text" name="postal-code" id="postal-code" placeholder="Enter your postal code...">
+                            <div class="input-field">
+                                <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+                                <input type="text" name="postal-code" id="postal-code" placeholder="Enter your postal code...">
+                            </div>
+                            
                         </div>
                     </div>
                 </div>   
